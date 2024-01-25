@@ -30,6 +30,7 @@ const images = () => {
 
       if (target && target.matches('div.popup')) {
          imgPopup.style.display = 'none';
+         document.body.style.overflow = '';
       }
    });
 };
