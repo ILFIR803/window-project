@@ -17932,7 +17932,6 @@ var images = function images() {
       imgPopup.style.display = 'flex';
       var path = target.parentNode.getAttribute('href');
       bigImage.setAttribute('src', path);
-      document.body.style.overflow = 'hidden';
     }
 
     ;
