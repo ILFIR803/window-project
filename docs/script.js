@@ -17935,12 +17935,12 @@ var images = function images() {
       document.body.style.overflow = 'hidden';
     }
 
-    ;
-
     if (target && target.matches('div.popup')) {
       imgPopup.style.display = 'none';
-      document.body.style.overflow = '';
     }
+  });
+  imgPopup.addEventListener('click', function () {
+    document.body.style.overflow = '';
   });
 };
 
