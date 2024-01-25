@@ -17920,14 +17920,19 @@ var images = function images() {
   imgPopup.style.justifyContent = 'center';
   imgPopup.style.alignItems = 'center';
   imgPopup.style.display = 'none';
+  bigImage.style.width = '500px';
+  bigImage.style.height = '500px';
+  bigImage.style.backgroundSize = 'cover';
   imgPopup.appendChild(bigImage);
   workSection.addEventListener('click', function (e) {
     e.preventDefault();
+    var target = e.target;
 
     if (target && target.classList.contains('preview')) {
       imgPopup.style.display = 'flex';
       var path = target.parentNode.getAttribute('href');
       bigImage.setAttribute('src', path);
+      document.body.style.overflow = 'hidden';
     }
 
     ;
