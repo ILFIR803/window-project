@@ -17934,8 +17934,6 @@ var images = function images() {
       bigImage.setAttribute('src', path);
     }
 
-    ;
-
     if (target && target.matches('div.popup')) {
       imgPopup.style.display = 'none';
     }

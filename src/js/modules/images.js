@@ -25,7 +25,7 @@ const images = () => {
          imgPopup.style.display = 'flex';
          const path = target.parentNode.getAttribute('href');
          bigImage.setAttribute('src', path);
-      };
+      }
 
       if (target && target.matches('div.popup')) {
          imgPopup.style.display = 'none';
